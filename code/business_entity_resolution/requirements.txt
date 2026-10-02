@@ -1,0 +1,8 @@
+numpy==2.3.5
+scikit-learn==1.8.0
+scipy==1.17.0
+pandas==2.2.3
+rapidfuzz==3.14.3
+lightgbm==4.6.0
+joblib==1.5.2
+Unidecode==1.4.0
