@@ -1,0 +1,48 @@
+Project: Amazon ML Challenge 2026 -- Business Entity Resolution
+Checkpoint date: this session (v3 -- cap-loosening + missed-match taxonomy)
+
+Current best measured result: FULL-SCALE candidate recall
+  S2 recall: 95.48%  (30,000-row S1 sample, full 5,034,616-row S2 index, Experiment A caps)
+  S3 recall: 94.72%  (15,000-row S1 sample, full 5,285,603-row S3 index, Experiment A caps)
+  Combined (weighted): 95.21%
+
+Precision / Recall / F0.5: UNKNOWN -- no model trained yet, this is
+  candidate recall only (blocking stage), not match accuracy.
+
+Best model: NONE TRAINED YET
+Best threshold: N/A
+Best blocking config: Experiment A caps (AL2=120, A4W=15, AT2=30) -- see BEST_CONFIG.md
+
+Completed this session:
+  - Missed-match taxonomy built from real S1/S2/S3 records (analysis/)
+  - Experiment A (cap loosening) implemented, measured at full scale, ACCEPTED
+  - Confirmed sandbox operational constraint: background processes do not
+    survive across tool calls in this environment; foreground+resume is
+    required
+
+Completed in prior sessions (unchanged, still valid):
+  - Full data audit (DATA_STATUS.md)
+  - Phase 1 code audit + 6 optimized modules (PHASE1_ARCHITECTURE_AUDIT.md)
+  - Full-scale S2/S3 candidate recall baseline measurement
+
+Incomplete:
+  - Address leading-zero normalization (evidenced, not yet coded/measured)
+  - Ordinal-number word<->digit normalization (evidenced, not yet coded/measured)
+  - Experiment B/C cap loosening (untested)
+  - Character n-gram / TF-IDF retrieval layer
+  - Full test-file audit
+  - Feature engineering wiring, hard-negative mining, model training
+  - GroupKFold OOF validation, Macro F0.5 threshold optimization
+  - Singleton / multi-match calibration
+  - Test inference, matching_results.tsv / candidate_pairs.tsv generation
+  - Official validator run
+
+Blocked: nothing currently blocked; all next steps are executable, limited
+  only by session time/turn budget and this sandbox's 1-CPU/10GB-disk/
+  300s-per-command constraints.
+
+Next experiment (ranked, see NEXT_EXPERIMENTS.md for full list):
+  1. Address leading-zero normalization -- measure with/without, same
+     methodology as Experiment A.
+  2. Ordinal-number normalization -- same.
+  3. Experiment B caps (AL2=150, A4W=20, AT2=40).
