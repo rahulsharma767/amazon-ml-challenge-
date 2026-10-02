@@ -1,0 +1,188 @@
+{
+  "s2": {
+    "non_latin_script_no_ascii_overlap": 90,
+    "other_partial_overlap_needs_manual_review": 82,
+    "name_close_edit_distance_but_low_token_overlap(likely_typo)": 8,
+    "name_only_match_address_diverges": 29,
+    "partial_overlap_both_fields_below_blocking_threshold": 12,
+    "address_only_match_name_diverges": 4
+  },
+  "s3": {
+    "name_only_match_address_diverges": 21,
+    "other_partial_overlap_needs_manual_review": 111,
+    "non_latin_script_no_ascii_overlap": 50,
+    "name_close_edit_distance_but_low_token_overlap(likely_typo)": 17,
+    "address_only_match_name_diverges": 11,
+    "partial_overlap_both_fields_below_blocking_threshold": 24
+  },
+  "examples": {
+    "S2|non_latin_script_no_ascii_overlap": [
+      [
+        "S1-638110492",
+        "S2-771208927"
+      ],
+      [
+        "S1-126920508",
+        "S2-849898364"
+      ],
+      [
+        "S1-117954160",
+        "S2-641059184"
+      ]
+    ],
+    "S2|other_partial_overlap_needs_manual_review": [
+      [
+        "S1-908800416",
+        "S2-993815983"
+      ],
+      [
+        "S1-431387492",
+        "S2-320352083"
+      ],
+      [
+        "S1-952959244",
+        "S2-294466024"
+      ]
+    ],
+    "S2|name_close_edit_distance_but_low_token_overlap(likely_typo)": [
+      [
+        "S1-872302647",
+        "S2-951619159"
+      ],
+      [
+        "S1-645598264",
+        "S2-270415673"
+      ],
+      [
+        "S1-973750603",
+        "S2-836620413"
+      ]
+    ],
+    "S2|name_only_match_address_diverges": [
+      [
+        "S1-522334317",
+        "S2-23867882"
+      ],
+      [
+        "S1-894916221",
+        "S2-956298739"
+      ],
+      [
+        "S1-952959244",
+        "S2-385446604"
+      ]
+    ],
+    "S2|partial_overlap_both_fields_below_blocking_threshold": [
+      [
+        "S1-550399311",
+        "S2-989503749"
+      ],
+      [
+        "S1-861768151",
+        "S2-262496716"
+      ],
+      [
+        "S1-710441033",
+        "S2-601704422"
+      ]
+    ],
+    "S2|address_only_match_name_diverges": [
+      [
+        "S1-758194280",
+        "S2-337495820"
+      ],
+      [
+        "S1-19715148",
+        "S2-935331797"
+      ],
+      [
+        "S1-732680285",
+        "S2-344489639"
+      ]
+    ],
+    "S3|name_only_match_address_diverges": [
+      [
+        "S1-724291976",
+        "S3-784538650"
+      ],
+      [
+        "S1-547630919",
+        "S3-594828889"
+      ],
+      [
+        "S1-348715776",
+        "S3-406851944"
+      ]
+    ],
+    "S3|other_partial_overlap_needs_manual_review": [
+      [
+        "S1-587107442",
+        "S3-383257895"
+      ],
+      [
+        "S1-235827905",
+        "S3-873245999"
+      ],
+      [
+        "S1-884606211",
+        "S3-364346917"
+      ]
+    ],
+    "S3|non_latin_script_no_ascii_overlap": [
+      [
+        "S1-235827905",
+        "S3-245041126"
+      ],
+      [
+        "S1-278416503",
+        "S3-40154261"
+      ],
+      [
+        "S1-942927206",
+        "S3-781029551"
+      ]
+    ],
+    "S3|name_close_edit_distance_but_low_token_overlap(likely_typo)": [
+      [
+        "S1-448143865",
+        "S3-499241072"
+      ],
+      [
+        "S1-204747469",
+        "S3-343660375"
+      ],
+      [
+        "S1-707083509",
+        "S3-527661898"
+      ]
+    ],
+    "S3|address_only_match_name_diverges": [
+      [
+        "S1-707083509",
+        "S3-978233618"
+      ],
+      [
+        "S1-806145334",
+        "S3-868278452"
+      ],
+      [
+        "S1-122439604",
+        "S3-386895692"
+      ]
+    ],
+    "S3|partial_overlap_both_fields_below_blocking_threshold": [
+      [
+        "S1-798709549",
+        "S3-457510555"
+      ],
+      [
+        "S1-442301559",
+        "S3-517784699"
+      ],
+      [
+        "S1-305647884",
+        "S3-484243371"
+      ]
+    ]
+  }
+}
