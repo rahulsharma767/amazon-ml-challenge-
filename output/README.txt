@@ -1,0 +1,1 @@
+Final competition output files are intentionally not fabricated here because the real test TSVs were not part of the uploaded checkpoint. Generate them with infer_test.py after training the model on the real training data, then run validate_outputs.py.
